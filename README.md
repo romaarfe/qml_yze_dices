@@ -9,7 +9,8 @@
 - [x] Seguir o padrão dos dados do Year Zero Engine
 - [x] Treinar QT Framework
 - [x] Treinar QML
-- [x] Treinar Javascript
+- [ ] Treinar C++
+- [ ] Treinar Javascript
 
 ---
 #### 🔧 FERRAMENTAS / TECNOLOGIAS:
@@ -18,6 +19,8 @@
 - QT Creator
 - QML
 - Javascript
+- C++
+- CMake
 
 ---
 ##### 📖 Projeto pessoal
