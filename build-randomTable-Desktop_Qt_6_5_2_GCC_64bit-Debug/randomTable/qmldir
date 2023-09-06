@@ -1,0 +1,5 @@
+module randomTable
+typeinfo apprandomTable.qmltypes
+prefer :/qt/qml/randomTable/
+Main 1.0 Main.qml
+

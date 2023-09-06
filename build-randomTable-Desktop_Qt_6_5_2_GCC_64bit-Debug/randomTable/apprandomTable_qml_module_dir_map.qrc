@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/randomTable">/home/administrator/Formacao/Projeto/QML/build-randomTable-Desktop_Qt_6_5_2_GCC_64bit-Debug/randomTable</file>
+
+  </qresource>
+</RCC>
