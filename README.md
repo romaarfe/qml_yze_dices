@@ -9,9 +9,8 @@
 - [x] Seguir o padrão dos dados do Year Zero Engine (RPG)
 - [x] Treinar QT Framework
 - [x] Treinar QML
-- [ ] Treinar C++
-- [ ] Treinar C
-- [ ] Treinar Javascript
+- [x] Treinar C++
+- [x] Treinar Javascript
 
 ---
 #### 🔧 FERRAMENTAS / TECNOLOGIAS:
@@ -20,6 +19,7 @@
 - QT Creator
 - QML
 - Javascript
+- C
 - C++
 - CMake
 
