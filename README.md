@@ -23,4 +23,9 @@
 - CMake
 
 ---
+#### 🎥 APRESENTAÇÃO:
+
+![Screencast from 06-09-2023 11_48_27](https://github.com/romaarfe/qml_yze_dices/assets/91450312/a4df70fd-680d-45fe-8b54-1e3edbc72b21)
+
+---
 ##### 📖 Projeto pessoal
