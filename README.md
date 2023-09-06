@@ -10,6 +10,7 @@
 - [x] Treinar QT Framework
 - [x] Treinar QML
 - [ ] Treinar C++
+- [ ] Treinar C
 - [ ] Treinar Javascript
 
 ---
