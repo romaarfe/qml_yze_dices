@@ -1,11 +1,11 @@
-import QtQuick
-import QtQuick.Controls
+import QtQuick 2.15
+import QtQuick.Controls 2.15
 import QtQuick.Controls.Universal
 
 ApplicationWindow {
     visible: true
     width: 500
-    height: 400
+    height: 500
     title: "Rolador de Dados"
     font.bold: true
 
@@ -98,17 +98,137 @@ ApplicationWindow {
                     font.pixelSize: 14
 
                     text: "Atributo: " + attributeResult + " (Sucessos: " + attributeSuccesses + ")" +
-                          "\nPerícia: " + skillResult + " (Sucessos: " + skillSuccesses + ")" +
-                          "\nEquipamento: " + equipmentResult + " (Sucessos: " + equipmentSuccesses + ")"
+                          "\n\nPerícia: " + skillResult + " (Sucessos: " + skillSuccesses + ")" +
+                          "\n\nEquipamento: " + equipmentResult + " (Sucessos: " + equipmentSuccesses + ")"
+                }
+            }
+
+            Row {
+                spacing: 10
+
+                Repeater {
+                    model: attributeResult.length // Use o comprimento da lista de resultados
+                    Rectangle {
+                        width: 50
+                        height: 50
+                        color: "red" // Cor para atributo (pode personalizar)
+                        border.color: "black"
+                        radius: 10 // Borda arredondada
+                        Rectangle {
+                            width: parent.width
+                            height: parent.height
+                            color: "#00000000" // Cor transparente para a sombra
+                            anchors.bottom: parent.bottom
+                            visible: mouseArea.containsMouse
+                            Behavior on opacity {
+                                NumberAnimation {
+                                    duration: 300
+                                }
+                            }
+                        }
+                        Text {
+                            anchors.centerIn: parent
+                            text: attributeResult[modelData]
+                            font.pixelSize: 20
+                            font.bold: true
+                        }
+                        MouseArea {
+                            id: mouseArea
+                            anchors.fill: parent
+                            onClicked: {
+                                // Aqui você pode adicionar ação quando o quadrado for clicado
+                            }
+                        }
+                    }
+                }
+            }
+
+            Row {
+                spacing: 10
+
+                Repeater {
+                    model: skillResult.length // Use o comprimento da lista de resultados
+                    Rectangle {
+                        width: 50
+                        height: 50
+                        color: "green" // Cor para perícia (pode personalizar)
+                        border.color: "black"
+                        radius: 10 // Borda arredondada
+                        Rectangle {
+                            width: parent.width
+                            height: parent.height
+                            color: "#00000000" // Cor transparente para a sombra
+                            anchors.bottom: parent.bottom
+                            visible: mouseArea.containsMouse
+                            Behavior on opacity {
+                                NumberAnimation {
+                                    duration: 300
+                                }
+                            }
+                        }
+                        Text {
+                            anchors.centerIn: parent
+                            text: skillResult[modelData]
+                            font.pixelSize: 20
+                            font.bold: true
+                        }
+                        MouseArea {
+                            id: mouseArea
+                            anchors.fill: parent
+                            onClicked: {
+                                // Aqui você pode adicionar ação quando o quadrado for clicado
+                            }
+                        }
+                    }
+                }
+            }
+
+            Row {
+                spacing: 10
+
+                Repeater {
+                    model: equipmentResult.length // Use o comprimento da lista de resultados
+                    Rectangle {
+                        width: 50
+                        height: 50
+                        color: "blue" // Cor para equipamento (pode personalizar)
+                        border.color: "black"
+                        radius: 10 // Borda arredondada
+                        Rectangle {
+                            width: parent.width
+                            height: parent.height
+                            color: "#00000000" // Cor transparente para a sombra
+                            anchors.bottom: parent.bottom
+                            visible: mouseArea.containsMouse
+                            Behavior on opacity {
+                                NumberAnimation {
+                                    duration: 300
+                                }
+                            }
+                        }
+                        Text {
+                            anchors.centerIn: parent
+                            text: equipmentResult[modelData]
+                            font.pixelSize: 20
+                            font.bold: true
+                        }
+                        MouseArea {
+                            id: mouseArea
+                            anchors.fill: parent
+                            onClicked: {
+                                // Aqui você pode adicionar ação quando o quadrado for clicado
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 
     function clearResults() {
-        attributeResult = 0;
-        skillResult = 0;
-        equipmentResult = 0;
+        attributeResult = [];
+        skillResult = [];
+        equipmentResult = [];
         attributeSuccesses = 0;
         skillSuccesses = 0;
         equipmentSuccesses = 0;
