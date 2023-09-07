@@ -7,6 +7,7 @@
 
 - [x] Criar um gerador de valores aleatórios (tipo dados)
 - [x] Seguir o padrão dos dados do Year Zero Engine (RPG)
+- [x] Desenhar os "dados" com os valores dentro (ainda como quadrados)
 - [x] Treinar QT Framework
 - [x] Treinar QML
 - [x] Treinar C++
