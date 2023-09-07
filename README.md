@@ -27,7 +27,7 @@
 ---
 #### 🎥 APRESENTAÇÃO:
 
-![Screencast from 06-09-2023 11_48_27](https://github.com/romaarfe/qml_yze_dices/assets/91450312/a4df70fd-680d-45fe-8b54-1e3edbc72b21)
+![Screencast from 07-09-2023 11_19_08](https://github.com/romaarfe/qml_yze_dices/assets/91450312/63ef765d-55b8-4c83-a03b-9daa9d31fd6e)
 
 ---
 ##### 📖 Projeto pessoal
