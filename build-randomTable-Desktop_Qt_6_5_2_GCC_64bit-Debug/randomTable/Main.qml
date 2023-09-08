@@ -113,13 +113,14 @@ ApplicationWindow {
                         height: 50
                         color: "red" // Cor para atributo (pode personalizar)
                         border.color: "black"
+                        border.width: 2
                         radius: 10 // Borda arredondada
                         Rectangle {
                             width: parent.width
                             height: parent.height
                             color: "#00000000" // Cor transparente para a sombra
                             anchors.bottom: parent.bottom
-                            visible: mouseArea.containsMouse
+                            visible: mouseArea1.containsMouse
                             Behavior on opacity {
                                 NumberAnimation {
                                     duration: 300
@@ -133,7 +134,7 @@ ApplicationWindow {
                             font.bold: true
                         }
                         MouseArea {
-                            id: mouseArea
+                            id: mouseArea1
                             anchors.fill: parent
                             onClicked: {
                                 // Aqui você pode adicionar ação quando o quadrado for clicado
@@ -153,13 +154,14 @@ ApplicationWindow {
                         height: 50
                         color: "green" // Cor para perícia (pode personalizar)
                         border.color: "black"
+                        border.width: 2
                         radius: 10 // Borda arredondada
                         Rectangle {
                             width: parent.width
                             height: parent.height
                             color: "#00000000" // Cor transparente para a sombra
                             anchors.bottom: parent.bottom
-                            visible: mouseArea.containsMouse
+                            visible: mouseArea2.containsMouse
                             Behavior on opacity {
                                 NumberAnimation {
                                     duration: 300
@@ -173,7 +175,7 @@ ApplicationWindow {
                             font.bold: true
                         }
                         MouseArea {
-                            id: mouseArea
+                            id: mouseArea2
                             anchors.fill: parent
                             onClicked: {
                                 // Aqui você pode adicionar ação quando o quadrado for clicado
@@ -193,13 +195,14 @@ ApplicationWindow {
                         height: 50
                         color: "blue" // Cor para equipamento (pode personalizar)
                         border.color: "black"
+                        border.width: 2
                         radius: 10 // Borda arredondada
                         Rectangle {
                             width: parent.width
                             height: parent.height
                             color: "#00000000" // Cor transparente para a sombra
                             anchors.bottom: parent.bottom
-                            visible: mouseArea.containsMouse
+                            visible: mouseArea3.containsMouse
                             Behavior on opacity {
                                 NumberAnimation {
                                     duration: 300
@@ -213,7 +216,7 @@ ApplicationWindow {
                             font.bold: true
                         }
                         MouseArea {
-                            id: mouseArea
+                            id: mouseArea3
                             anchors.fill: parent
                             onClicked: {
                                 // Aqui você pode adicionar ação quando o quadrado for clicado
